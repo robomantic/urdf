@@ -54,7 +54,6 @@ urdf::SensorParserMap getSensorParsers(const std::vector<std::string> &allowed =
 urdf::SensorParserMap getSensorParser(const std::string &name);
 
 /** parse <sensor> tags in URDF document */
-SensorMap parseSensors(TiXmlDocument &doc, const urdf::SensorParserMap &parsers);
 SensorMap parseSensors(const std::string &xml, const urdf::SensorParserMap &parsers);
 SensorMap parseSensorsFromParam(const std::string &param, const urdf::SensorParserMap &parsers);
 SensorMap parseSensorsFromFile(const std::string &filename, const urdf::SensorParserMap &parsers);
